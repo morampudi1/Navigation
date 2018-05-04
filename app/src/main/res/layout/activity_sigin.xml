@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images2"
+    tools:context="com.example.welcome.navigation.SiginActivity">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_margin="20dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center_horizontal"
+      android:layout_margin="5dp"
+      android:orientation="vertical">
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="180dp"
+       android:layout_height="180dp"
+       android:layout_gravity="center"
+       android:src="@drawable/images5"
+       app:civ_border_color="#c93434"
+       app:civ_border_width="2dp" />
+
+   <android.support.design.widget.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp">
+
+    <EditText
+        android:id="@+id/et_uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EF4581"
+        android:drawableLeft="@drawable/message"
+        android:drawablePadding="20dp"
+        android:hint="@string/username"
+        android:inputType="text" />
+   </android.support.design.widget.TextInputLayout>
+
+   <android.support.design.widget.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp">
+
+    <EditText
+        android:id="@+id/et_pass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EF4581"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+   </android.support.design.widget.TextInputLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="@string/forget_password"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="RegisterHere"
+        android:textColor="#000"
+        android:textSize="20sp" />
+   </LinearLayout>
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="end"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/loginbuttion"
+       android:text="Login" />
+  </LinearLayout>
+ </LinearLayout>
+</LinearLayout>
