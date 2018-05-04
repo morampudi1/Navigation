@@ -27,6 +27,7 @@ public class login2Activity extends Activity {
                 String login=et_username.getText().toString();
                 editor.putString("username",login);
                 editor.apply();
+               //
                 startActivity(intent);
 
             }
